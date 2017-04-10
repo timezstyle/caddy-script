@@ -18,16 +18,16 @@ Caddy installation script (automated)
 
 #### Compatibility
 
-|Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 VPS on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|WSL / Windows Subsystem for Linux (15063) :new:|Notes|
+|Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 VPS on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|Windows Subsystem for Linux (15063) :new:|Notes|
 |-|-|-|-|-|
 |Caddy|:white_check_mark:|:white_check_mark:|:white_check_mark:| |
 |caddy.service|:white_check_mark:|:white_check_mark:|:x:|Run Caddy manually (as root):<br>`ulimit -n 8192 && caddy -conf="/home/caddy/Caddyfile" -pidfile="/var/run/caddy/caddy.pid"`|
-|PHP7|:white_check_mark:|:white_check_mark:|:warning: not tested yet| |
-|MariaDB|:white_check_mark:|:white_check_mark:|:warning: not tested yet| |
+|PHP7|:white_check_mark:|:white_check_mark:|:question:| |
+|MariaDB|:white_check_mark:|:white_check_mark:|:question:| |
 |Automatic security updates|:white_check_mark:|:white_check_mark:|:x:| |
-|WordPress|:white_check_mark:|:white_check_mark:|:warning: not tested yet| |
-|Shopware|:white_check_mark:|:white_check_mark:|:warning: not tested yet| |
-|phpMyAdmin|:white_check_mark:|:white_check_mark:|:warning: not tested yet|&thinsp;|
+|WordPress|:white_check_mark:|:white_check_mark:|:question:| |
+|Shopware|:white_check_mark:|:white_check_mark:|:question:| |
+|phpMyAdmin|:white_check_mark:|:white_check_mark:|:question:|&thinsp;|
 
 #### Usage
 

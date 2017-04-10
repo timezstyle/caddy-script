@@ -16,11 +16,18 @@ Caddy installation script (automated)
 - [x] Install Shopware [optional]
 - [x] Install phpMyAdmin [optional]  
 
-#### Tested on
+#### Compatibility
 
-- Ubuntu 16.04.1 x64 LTS (Desktop)
-- Ubuntu 16.04.2 x64 Droplet on [DigitalOcean](https://m.do.co/c/3c23791febd7)*
-- Ubuntu 16.04.2 x64 Linode on [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**
+|Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|WSL / Windows Subsystem for Linux (Build 15063)|Notes|
+|-|-|-|-|-|
+|Caddy|✅|✅|✅|-|
+|Caddy (Service)|✅|✅|❌|Run Caddy on WSL (as root):<br>`ulimit -n 8192 && caddy -conf="/home/caddy/Caddyfile" -pidfile="/var/run/caddy/caddy.pid"`|
+|PHP7|✅|✅|✅|-|
+|MariaDB|✅|✅|not tested yet|-|
+|Automatic security updates|✅|✅|❌|-|
+|WordPress|✅|✅|not tested yet|-|
+|Shopware|✅|✅|not tested yet|-|
+|phpMyAdmin|✅|✅|not tested yet|-|
 
 #### Usage
 

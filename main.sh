@@ -230,7 +230,7 @@ function install_caddy()
 {
   echo "Installing Caddy."
   sudo -u caddy curl -fsSL https://getcaddy.com | bash -s "${caddy_extensions}"
-  if [[ $WSL == 1 ]]; then
+  if [[ $WSL == "1" ]]; then
     sleep 0
   else
     echo "Setting permissions for Caddy."

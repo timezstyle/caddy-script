@@ -11,14 +11,14 @@ Caddy installation script (automated)
 - [x] Install MariaDB
 - [x] Register Caddy as a service with systemd
 - [x] Configure Caddyfile with gzip, fast-cgi, logs & redirects
-- [x] Configure automatic security updates with email notifications :new:
+- [x] Configure automatic security updates with email notifications
 - [x] Install WordPress [optional]
 - [x] Install Shopware [optional]
 - [x] Install phpMyAdmin [optional]  
 
 #### Compatibility
 
-|Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 VPS on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|Windows Subsystem for Linux (15063) :new:|Notes|
+|Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 VPS on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|Windows Subsystem for Linux (15063)|Notes|
 |-|-|-|-|-|
 |Caddy|:white_check_mark:|:white_check_mark:|:white_check_mark:| |
 |caddy.service|:white_check_mark:|:white_check_mark:|:x:|Run Caddy manually (as root):<br>`ulimit -n 8192 && caddy -conf="/home/caddy/Caddyfile" -pidfile="/var/run/caddy/caddy.pid"`|

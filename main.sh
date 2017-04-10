@@ -230,8 +230,12 @@ function install_caddy()
 {
   echo "Installing Caddy."
   sudo -u caddy curl -fsSL https://getcaddy.com | bash -s "${caddy_extensions}"
-  echo "Setting permissions for Caddy."
-  sudo setcap cap_net_bind_service=+ep /usr/local/bin/caddy
+  if [[ $WSL == 1 ]]; then
+    sleep 0
+  else
+    echo "Setting permissions for Caddy."
+    sudo setcap cap_net_bind_service=+ep /usr/local/bin/caddy
+  fi
   echo "Creating Caddyfile."
   create_caddyfile
   echo "Setting up directorys for ${domain}"
@@ -600,6 +604,7 @@ EOT
 }
 
 set -e
+WSL=$(grep -c -F "Microsoft" /proc/sys/kernel/osrelease)
 prepare
 check_root
 create_user

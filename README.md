@@ -11,7 +11,7 @@ Caddy installation script (automated)
 - [x] Install MariaDB
 - [x] Register Caddy as a service with systemd
 - [x] Configure Caddyfile with gzip, fast-cgi, logs & redirects
-- [x] Configure automatic security updates with email notifications
+- [x] Configure unattended-upgrades with email notifications
 - [x] Install WordPress [optional]
 - [x] Install Shopware [optional]
 - [x] Install phpMyAdmin [optional]  
@@ -21,10 +21,10 @@ Caddy installation script (automated)
 |Feature|Ubuntu 16.04.1 x64 (Desktop)|16.04.2 x64 VPS on [DigitalOcean](https://m.do.co/c/3c23791febd7)\* or [Linode](https://www.linode.com/?r=d642007a0d1ab4e27e2ad163aa87e6f93b65088e)**|Windows Subsystem for Linux (15063)|Notes|
 |-|-|-|-|-|
 |Caddy|:white_check_mark:|:white_check_mark:|:white_check_mark:| |
-|caddy.service|:white_check_mark:|:white_check_mark:|:x:|Run Caddy manually (as root):<br>`ulimit -n 8192 && caddy -conf="/home/caddy/Caddyfile" -pidfile="/var/run/caddy/caddy.pid"`|
+|caddy.service|:white_check_mark:|:white_check_mark:|:x:|WSL: Run Caddy manually (as root):<br>`ulimit -n 8192 && caddy -conf="/home/caddy/Caddyfile" -pidfile="/var/run/caddy/caddy.pid"`|
 |PHP7|:white_check_mark:|:white_check_mark:|:question:| |
 |MariaDB|:white_check_mark:|:white_check_mark:|:question:| |
-|Automatic security updates|:white_check_mark:|:white_check_mark:|:x:| |
+|unattended-upgrades|:white_check_mark:|:white_check_mark:|:x:| |
 |WordPress|:white_check_mark:|:white_check_mark:|:question:| |
 |Shopware|:white_check_mark:|:white_check_mark:|:question:| |
 |phpMyAdmin|:white_check_mark:|:white_check_mark:|:question:|&thinsp;|
